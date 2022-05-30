@@ -31,11 +31,6 @@ collections:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - gulpfile.babel.js
-  - node_modules
-  - package.json
-  - package-lock.json
   - README.md
-  - src
-  - tailwind.config.js
-  - .babelrc
+  - .travis.yml
+  - setup.sh
