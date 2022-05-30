@@ -8,7 +8,7 @@ install:
   - bundle install
 
 script:
-  - "./setup.sh"
+  - "./setup"
 
 branches:
   only:
