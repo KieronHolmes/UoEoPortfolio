@@ -1,0 +1,28 @@
+---
+layout: default
+title: Modules
+permalink: /modules/
+---
+<section>
+    {% for module in site.modules %}
+    <div class="flex flex-col md:items-center max-w-6xl px-6 py-8 mx-auto relative w-full">
+       <div class="mt-6">
+          <div class="max-w-4xl px-10 py-6 bg-white rounded-lg shadow-md">
+             <div class="flex justify-between items-center"><span class="font-light text-gray-600">{{ module.start_date}} - {{ module.end_date}} (Tutor: {{ module.tutor }})</span><a href="#"
+                class="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{{ module.type }}</a>
+             </div>
+             <div class="mt-2">
+                <a href="{{ module.url }}" class="text-2xl text-gray-700 font-bold hover:underline">
+                {{ module.name }}</a>
+                <p class="mt-2 text-gray-600">
+                   {{ module.content }}        
+                </p>
+             </div>
+             <div class="flex justify-between items-center mt-4"><a href="{{ module.url }}"
+                class="text-blue-500 hover:underline">Read more</a>
+             </div>
+          </div>
+       </div>
+    </div>
+    {% endfor %}
+</section>
