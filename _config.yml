@@ -1,0 +1,36 @@
+title: Tailwind Jekyll Starter Kit
+description: A starter kit for using Tailwind with Jekyll
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "modules"
+    values:
+      layout: "module"
+  - scope:
+      path: ""
+      type: "units"
+    values:
+      layout: "unit"
+
+
+collections:
+  modules:
+    output: true
+    permalink: /:collection/:slug
+  units:
+    output: true
+    permalink: /:collection/:slug
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .travis.yml
+  - setup

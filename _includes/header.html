@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>{{ page.title }} - Kieron Holmes</title>
+</head>
+<body>
+    <div class="font-sans bg-white text-md">
+        <main>
+            <header class="flex flex-col items-center justify-between max-w-full md:max-w-6xl px-2 md:px-6 py-12 mx-auto md:flex-row">
+                <div class="text-4xl text-indigo-900 font-semibold">
+                    <a href="{% link index.html %}">
+                        E-Portfolio
+                    </a>
+                </div>
+                <nav class="z-10">
+                    <ul class="flex flex-row items-center px-6 py-4 text-indigo-100 bg-indigo-900 rounded-lg">
+                        <li class="pr-8"><a href="{% link index.html %}" class="">Home</a></li>
+                        <li class="pr-8"><a href="{% link modules/landing.html %}" >Modules</a></li>
+                        <li class=""><a href="mailto:kieron@kbho.co.uk" class="ml-2">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
