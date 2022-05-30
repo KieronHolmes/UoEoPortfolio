@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="">
-    <h1 class="text-4xl text-center mb-4 font-semibold font-heading font-semibold">{{ page.name }}</h1>
+    <h1 class="text-4xl text-center mb-4 font-semibold font-heading font-semibold text-indigo-900">{{ page.name }}</h1>
     <div class="max-w-3xl mx-auto px-4">
         {{ content }}
     </div>
@@ -15,14 +15,14 @@ layout: default
     <div class="flex flex-col md:items-center max-w-6xl px-6 py-8 mx-auto relative w-full">
         <div class="mt-6">
             <div class="max-w-4xl px-10 py-6 bg-white rounded-lg shadow-md">
-                <div class="flex justify-between items-center"><span class="font-light text-gray-600">X - X (X)</span><a href="#"
+                <div class="flex justify-between items-center"><span class="font-light text-gray-600">Start Date: {{ unit.start_date }}</span><a href="#"
                     class="px-2 py-1 text-gray-100 font-bold rounded{% if unit.status == 'Complete' %} bg-green-600 hover:bg-green-500{% elsif unit.status == 'In Progress' %} bg-blue-600 hover:bg-blue-500{% elsif unit.status == 'Not Started' %} bg-red-600 hover:bg-red-500{% endif %}">{{ unit.status }}</a>
                 </div>
                 <div class="mt-2">
-                    <a href="{{ unit.url }}" class="text-2xl text-gray-700 font-bold hover:underline">
+                    <a href="{{ unit.url }}" class="text-2xl text-indigo-900 font-bold hover:underline">
                         Unit {{ unit.unit_number }}</a>
                     <p class="mt-2 text-gray-600">
-                        {{ unit.content }}
+                        For further information on learning objectives within this unit, please click "Read More". Artefacts and General Notes will also be stored under their respective units towards the end of each unit.
                     </p>
                 </div>
                 <div class="flex justify-between items-center mt-4"><a href="{{ unit.url }}"
